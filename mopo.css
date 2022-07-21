@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background: #0E0E0E;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #f77e22;
+  padding-inline: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar a, .navbar .title {
+  color: #262626;
+}
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar .navbar-brand .toggle-menu {
+  display: block;
+  font-size: 1.5rem;
+}
+.navbar .navbar-brand .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: arial;
+}
+.navbar nav {
+  display: none;
+  align-items: center;
+}
+.navbar nav ul {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.navbar nav ul li {
+  position: relative;
+}
+.navbar nav ul li a {
+  display: block;
+  padding: 10px 14px;
+  font-size: 1.5rem;
+}
+.navbar .links {
+  display: none;
+  align-items: center;
+}
+.navbar .links ul {
+  display: flex;
+}
+.navbar .links ul li {
+  position: relative;
+}
+.navbar .links ul li a {
+  display: flex;
+  gap: 10px;
+  padding: 10px 14px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  align-items: center;
+}
+.navbar .links ul li a span {
+  font-size: initial;
+  font-weight: bold;
+  font-family: arial;
+}
+
+.mobile-nav {
+  display: none;
+  background: #f77e22;
+  height: 100vh;
+  position:absolute;
+  z-index:999;
+  top:0;
+}
+
+.mobile-nav ul {
+  transform:translateY(100px)
+}
+.mobile-nav.active {
+  display: block;
+}
+.mobile-nav ul li {
+  padding-inline: 10px;
+  border-bottom: 1px solid #1a1a1a;
+}
+.mobile-nav ul li a {
+  color: #262626;
+  text-decoration: none;
+  display: block;
+  padding-block: 10px;
+}
+.mobile-nav ul li a span {
+  font-family: arial;
+  padding-inline: 10px;
+}
+.mobile-nav li.social-links {
+  display: flex;
+}
+.mobile-nav li.social-links a {
+  padding: 10px 14px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 20px auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.mopo {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.container {
+  padding: 30px;
+  background-color: #F77E21;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.home__blob-img {
+  background-color: white;
+}
+
+.videos {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+}
+
+.videos video {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.main-text {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  gap: 20px;
+}
+
+.main-text img {
+  width: 100%;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  min-width: 30%;
+}
+
+.footer { 
+  color: #B7B7B7;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+h4 { 
+  margin-left: 40px;
+}
+
+@media screen and (min-width:700px) {
+  .navbar nav,
+  .navbar .links {
+    display:flex;
+  }
+  .navbar .navbar-brand .toggle-menu {
+    display:none;
+  }
+  .mobile-nav.active {
+    display: none;
+  }
+}
+

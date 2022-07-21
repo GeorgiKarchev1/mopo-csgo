@@ -1,0 +1,5 @@
+videos/ filter=lfs diff=lfs merge=lfs -text
+. filter=lfs diff=lfs merge=lfs -text
+casino.mp4 filter=lfs diff=lfs merge=lfs -text
+malko.mp4 filter=lfs diff=lfs merge=lfs -text
+MopoCSGO.mp4 filter=lfs diff=lfs merge=lfs -text
